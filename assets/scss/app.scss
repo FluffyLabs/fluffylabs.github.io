@@ -1,0 +1,10 @@
+@charset 'utf-8';
+@import 'aos/src/sass/aos.scss';
+@import 'slick-carousel/slick/slick.css';
+@import 'vendor/normalizer';
+@import 'vendor/variables';
+@import 'vendor/base';
+
+@import 'components/header';
+
+@import 'pages/home';
