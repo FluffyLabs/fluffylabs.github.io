@@ -408,11 +408,13 @@ a:hover {
             <div class="right">
                 <h3>get in touch</h3>
                 <p>if for some weird reason you are interested in speaking with us feel free to send us an e-mail. but honestly we would rather have you create a github issue or a pull request instead.</p>
-                <form>
-                    <div class="form-wrap"><input type="text" placeholder="name"></div>
-                    <div class="form-wrap"><input type="text" placeholder="email"></div>
-                    <div class="form-wrap"><textarea placeholder="describe why you bother us"></textarea></div>
-                     <button class="btn">send</button>
+                <form target="_blank" action="https://formsubmit.co/30ab57883c0cf1725f236ef9d4b87ab9" method="POST">
+                    <input type="hidden" name="_subject" value="contact from fluffylabs.dev">
+                    <input type="text" name="_honey" style="display:none">
+                    <div class="form-wrap"><input type="text" name="name" placeholder="name"></div>
+                    <div class="form-wrap"><input type="text" name="email" placeholder="email"></div>
+                    <div class="form-wrap"><textarea name="message" placeholder="describe why you bother us"></textarea></div>
+                     <button type="submit" class="btn">send</button>
                 </form>
             </div>
         </div>
