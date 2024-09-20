@@ -6,25 +6,214 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0">
     <meta name="description" content="">
-    <title>Home page</title>
+    <title>Fluffy Labs - blockchain development no fluff</title>
     <link rel="stylesheet" href="assets/dist/app.css">
+    <link rel="preconnect" href="//fonts.googleapis.com">
+    <link rel="preconnect" href="//fonts.gstatic.com" crossorigin>
+    <link href="//fonts.googleapis.com/css2?family=Inria+Sans:wght@300&display=swap" rel="stylesheet">
+<style>
+body {
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    background-size: contain, contain;
+    background-image: url('./assets/images/bottom-bg-dark.png'), url('./assets/images/top-bg.jpg');
+    background-position: center bottom, center top;
+}
+@media (prefers-color-scheme: dark) {
+    body {
+        background-image: url('./assets/images/bottom-bg.png'), url('./assets/images/top-bg-dark.jpg');
+    }
+}
+a:hover {
+    text-decoration: underline !important;
+}
+.top-section {
+    padding-bottom: 140px;
+}
+.top-section p {
+    text-shadow: 1px 1px 1px #8a899f;
+}
+.footer {
+    margin-top: 130px;
+}
+@media (prefers-color-scheme: dark) {
+.header__inner {
+    background-color: rgba(50, 50, 50, 0.4);
+}
+}
+.header__inner ul li a {
+    font-size: 20px;
+    color: #fff;
+}
+.footer .header__inner ul li a {
+    color: #fff !important; 
+}
+.header .menu-toggle span {
+    background: #fff;
+}
+.projects .list .item-full h3,
+.projects .list .item h3 {
+    font-size: 36px;
+}
+.projects .list .item,
+.projects .list .item-full .text {
+    padding-bottom: 24px;
+}
+.projects .list .item {
+    background-color: #ddeeff;
+}
+.projects .list .item-full {
+    background-color: #A0CDFC;
+    margin-bottom: 25px;
+}
+
+@media (prefers-color-scheme: dark) {
+.projects .list .item-full {
+    background-color: rgba(30,30,30,0.8);
+}
+}
+.projects .list .item-full .img {
+    background-color: #abd36b;
+    background-image: url('./assets/images/icon8.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 30px;
+    width: 32%;
+    overflow: hidden;
+    display: flex;
+}
+.projects .list .item .btn,
+.projects .list .item .btn-transparent,
+.projects .list .item-full .btn,
+.projects .list .item-full .btn-transparent {
+    margin: 6px 0 0 0;
+    padding: 10px 29px;
+    display: inline-block;
+    font-size: 32px;
+    border: 1px solid;
+    min-width: 144px;
+    text-align: center;
+}
+.contact .container .right {
+    background-color: #ddeeff;
+}
+.contact .container .right form button {
+    border: 1px solid #211E59;
+}
+.contact .container .right form input,
+.contact .container .right form textarea {
+    color: #211E59;
+}
+.projects .list .item-full.mobile-only {
+    display: none;
+}
+@media(max-width: 1023px) {
+    body {
+        background-size: auto, contain;
+    }
+    .header__inner {
+        background: rgba(255, 255, 255, 0.44);
+    }
+    .header {
+        margin-bottom: 100px;
+    }
+    .header:not(.footer) .logo,
+    .header .menu-toggle span {
+        filter: drop-shadow(-1px 0 3px #666);
+    }
+    .top-section {
+        background-image: url('./assets/images/people-mobile.png');
+        padding-bottom: 85px;
+    }
+    .top-section-description p {
+        font-size: 22px;
+    }
+    .heading p {
+        font-size: 18px;
+    }
+    .list-load-more {
+        color: #211e59;
+        border: 3px solid #211e59;
+        background-color: #fff;
+        margin-top: 25px;
+    }
+    .projects .list .item p,
+    .projects .list .item-full p {
+        font-size: 18px;
+    }
+    .projects .list .item-full h3,
+    .projects .list .item h3 {
+        font-size: 32px;
+    }
+
+    .projects .list .item .btn,
+    .projects .list .item .btn-transparent,
+    .projects .list .item-full .btn,
+    .projects .list .item-full .btn-transparent {
+        font-size: 26px;
+    }
+
+    .projects .list .item-full .img {
+        width: 100%;
+        height: 175px;
+    }
+
+    .projects .list .item:nth-child(2) {
+        margin-bottom: 45px;
+    }
+
+    .projects .list .item-full.mobile-only {
+        display: block !important;
+    }
+    .projects .list .item-full.mobile-hidden {
+        display: none !important;
+    }
+    .projects .list .item p {
+        font-size: 18px;
+    }
+    #contact {
+        margin-top: 0;
+        padding-top: 90px;
+    }
+    .footer {
+        margin-top: 80px;
+    }
+    .footer .logo {
+        flex: 1;
+    }
+    .footer .logo img {
+        margin: auto;
+    }
+    .footer ul {
+        justify-content: space-evenly;
+    }
+    .contact .container .right p {
+        font-size: 18px;
+    }
+    .contact .container .left {
+        margin-top: 100px;
+    }
+}
+</style>
 </head>
 
 <body>
     <div class="header">
         <div class="container">
             <div class="header__inner">
-                <div class="logo"><img src="assets/images/logo.svg" alt=""></div>
+                <div class="logo"><img src="assets/images/logo.svg" alt="Fluffy Labs"></div>
                 <a href="#" class="menu-toggle">
                     <span></span>
                     <span></span>
                     <span></span>
                 </a>
                 <ul>
-                    <li><a href="#project" class="scroll-down">Project</a></li>
-                    <li><a href="#what-we-do" class="scroll-down">What we do</a></li>
-                    <li><a href="#technologies" class="scroll-down">Competencies & Technologies</a></li>
-                    <li><a href="#contact" class="scroll-down">Contact</a></li>
+                    <li><a href="#project" class="scroll-down">projects</a></li>
+                    <li><a href="//github.com/FluffyLabs" class="scroll-down">github</a></li>
+                    <li><a href="//x.com/fluffylabs_dev" class="scroll-down">twitter</a></li>
+                    <li><a href="#contact" class="scroll-down">get in touch</a></li>
                 </ul>
             </div>
         </div>
@@ -32,106 +221,104 @@
 
     <div class="top-section">
         <div class="container">
-            <div class="label">HEY THERE!</div>
-            <h1>Welcome to Fluffy Labs!</h1>
-            <p>Welcome to Fluffy Labs, where we mix the magic of blockchain with a sprinkle of fun. We're not your typical super-serious developers. Instead, we are a bunch of curious, fun-loving tech geeks with some serious engineering chops. We love exploring new tech and making the blockchain world a playground for everyone.</p>
-            <a href="#contact" class="btn scroll-down">Let's Talk</a>
-            <a href="#project" class="btn-transparent scroll-down">Our Projects</a>
+            <div class="label">why are <s>we</s> you here?</div>
+            <h1>fluffy labs</h1>
+            <p>hey there! we build fluffy blockchain stuff. talk is cheap, so see our github for the code.</p>
+            <br/>
+            <br/>
+            <br/>
+            <a href="//github.com/FluffyLabs" class="btn scroll-down">view github</a>
+            <a href="#project" class="btn-transparent scroll-down">read more</a>
         </div>
     </div>
 
     <div class="top-section-description">
         <div class="container">            
-            <p>Welcome to Fluffy Labs, where we mix the magic of blockchain with a sprinkle of fun. We're not your typical super-serious developers. Instead, we are a bunch of curious, fun-loving tech geeks with some serious engineering chops. We love exploring new tech and making the blockchain world a playground for everyone.</p>
+            <p>hey there! we build fluffy blockchain stuff. talk is cheap, so see our github for the code.</p>
         </div>
     </div>
 
     <div class="projects" id="project">
         <div class="container">
             <div class="heading">
-                <h2>Our Recent Projects</h2>
-                <p>We love tinkering with cool ideas at Fluffy Labs. Here are some of the awesome projects we've been working on:</p>
+                <h2>projects</h2>
+                <p>no fluff - we build stuff</p>
             </div>
             <div class="list">
+                <div class="item-full mobile-only">
+                    <!-- NOTE: not best at websites, so when you change the copy here make sure to do it at the mobile-hidden version too! -->
+                    <div class="img"></div>
+                    <div class="text">
+                        <h3>typeberry<br>(stealth mode)</h3>
+                        <p>our flagship project is the jam protocol implementation called typeberry. it is written in typescript, so it might not be the fastest but we strive to make it the most useful for jam-based tool developers and the most helpful for other jam implementors.</p>
+                        <p>the project is currently closed-source due to the <a href="//jam.web3.foundation">decentralized jam contest</a> but reach out if you want to learn more.</p>
+                        <a href="#contact" class="scroll-down btn">contact</a>
+                    </div>
+                </div>
+
                 <div class="item">
                     <div class="bg1"></div>
                     <div class="bg2"></div>
-                    <div class="top"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.0002 10.587L16.9502 5.63696L18.3642 7.05096L13.4142 12.001L18.3642 16.951L16.9492 18.365L11.9992 13.415L7.05023 18.365L5.63623 16.95L10.5862 12L5.63623 7.04996L7.05023 5.63796L12.0002 10.587Z" fill="#114688"/>
-                        </svg>
-                        </div>
-                    <div class="img"><img src="assets/images/icon1.png" alt=""></div>
-                    <h3>Dynamic SCALE / JAM Decoder</h3>
-                    <p>This handy tool decodes tricky SCALE-encoded bytes in real-time. You can tweak type definitions on the fly and use pre-loaded JAM types to auto-fill expected fields and names.</p>
-                    <a href="#" class="btn-transparent">GitHub Link</a>
+                    <div class="img"><img src="assets/images/icon4.png" alt="pvm debugger icon"></div>
+                    <h3>pvm debugger</h3>
+                    <p>
+                        pvm is a new virtual machine based on risc-v and designed specifically for jam. we have built a web-based tool to disassemble pvm programs
+                    and after plugging in one of available pvm implementations also running &amp; debugging it.
+                    </p>
+                    <a href="//github.com/fluffylabs/pvm-debugger" class="btn-transparent">code</a>
+                    <a href="//pvm.fluffylabs.dev" class="btn">demo</a>
                 </div>
                 <div class="item">
-                    <div class="top"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.0002 10.587L16.9502 5.63696L18.3642 7.05096L13.4142 12.001L18.3642 16.951L16.9492 18.365L11.9992 13.415L7.05023 18.365L5.63623 16.95L10.5862 12L5.63623 7.04996L7.05023 5.63796L12.0002 10.587Z" fill="#114688"/>
-                        </svg>
-                        </div>
-                    <div class="img"><img src="assets/images/icon2.png" alt=""></div>
-                    <h3>Gray Paper Decoder</h3>
-                    <p>A personal guide to decode the cryptic Gray Paper. It lists Greek symbols with explanations, provides screenshots with descriptions, and offers an interactive website to hover over formulas for quick insights.</p>
-                    <a href="#" class="btn-transparent">GitHub Link</a>
+                    <div class="img"><img src="assets/images/icon1.png" alt="gray paper reader icon"></div>
+                    <h3>gray paper reader</h3>
+                    <p>
+                        to accelerate jam implementation, we have built a web-based reader for the <a href="//graypaper.com">gray paper</a>. it allows sharing links to a selection and manage personal notes. there is also an ai assistant to help explaining the concise form of the paper. 
+                    </p>
+                    <a href="//github.com/fluffylabs/graypaper-reader" class="btn-transparent">code</a>
+                    <a href="//graypaper.fluffylabs.dev" class="btn">demo</a>
                 </div>
                 <div class="item">
-                    <div class="top"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.0002 10.587L16.9502 5.63696L18.3642 7.05096L13.4142 12.001L18.3642 16.951L16.9492 18.365L11.9992 13.415L7.05023 18.365L5.63623 16.95L10.5862 12L5.63623 7.04996L7.05023 5.63796L12.0002 10.587Z" fill="#114688"/>
-                        </svg>
-                        </div>
-                    <div class="img"><img src="assets/images/icon3.png" alt=""></div>
-                    <h3>PVM Disassembler</h3>
-                    <p>Transforms PVM code into readable instructions. Perfect for debugging, it visualizes bytecode parts with colors and converts assembler code to bytecode. Potential to evolve into a step-by-step debugger.</p>
-                    <a href="#" class="btn-transparent">GitHub Link</a>
+                    <div class="img"><img src="assets/images/icon2.png" alt="trie visualiser icon"></div>
+                    <h3>trie visualiser<br/><small>(in progress)</small></h3>
+                    <p>jam's binary merkle trie visualiser for educational purposes. see how nodes are added to the trie and how the merkle root hash is calculated.</p>
+                    <br />
+                    <br />
+                    <a href="//github.com/fluffylabs/trie-visualiser" class="btn-transparent">code</a>
+                    <a href="//trie.fluffylabs.dev" class="btn">demo</a>
                 </div>
                 <div class="item">
-                    <div class="top"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.0002 10.587L16.9502 5.63696L18.3642 7.05096L13.4142 12.001L18.3642 16.951L16.9492 18.365L11.9992 13.415L7.05023 18.365L5.63623 16.95L10.5862 12L5.63623 7.04996L7.05023 5.63796L12.0002 10.587Z" fill="#114688"/>
-                        </svg>
-                        </div>
-                    <div class="img"><img src="assets/images/icon4.png" alt=""></div>
-                    <h3>Grandpa Simulator</h3>
-                    <p>Simulates and debugs Grandpa implementations. In Finality Mode, create blockchains to see how Grandpa handles forks. In Comms Mode, inspect communication and state between nodes, and simulate events</p>
-                    <a href="#" class="btn-transparent">GitHub Link</a>
-                </div>
-                <div class="item">
-                    <div class="top"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.0002 10.587L16.9502 5.63696L18.3642 7.05096L13.4142 12.001L18.3642 16.951L16.9492 18.365L11.9992 13.415L7.05023 18.365L5.63623 16.95L10.5862 12L5.63623 7.04996L7.05023 5.63796L12.0002 10.587Z" fill="#114688"/>
-                        </svg>
-                        </div>
                     <div class="img"><img src="assets/images/icon5.png" alt=""></div>
-                    <h3>RPC Docs & Client</h3>
-                    <p>Document and interact with JAM’s RPC structure. Connect to a running node, invoke RPCs, and see results in your browser with detailed documentation and an interactive client interface.</p>
-                    <a href="#" class="btn-transparent">GitHub Link</a>
+                    <h3>jam codec<br/><small>(planned)</small></h3>
+                    <p></p>
+                    <a href="#contact" class="scroll-down btn-transparent">contact</a>
                 </div>
                 <div class="item">
-                    <div class="top"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.0002 10.587L16.9502 5.63696L18.3642 7.05096L13.4142 12.001L18.3642 16.951L16.9492 18.365L11.9992 13.415L7.05023 18.365L5.63623 16.95L10.5862 12L5.63623 7.04996L7.05023 5.63796L12.0002 10.587Z" fill="#114688"/>
-                        </svg>
-                        </div>
-                    <div class="img"><img src="assets/images/icon6.png" alt=""></div>
-                    <h3>Test Network Visualizer</h3>
-                    <p>A dashboard to visualize test network health and performance. Shows the best block, the best-finalized block, and the number of forks, inspired by ethstats.dev.</p>
-                    <a href="#" class="btn-transparent">GitHub Link</a>
+                    <div class="img"><img src="assets/images/icon4.png" alt=""></div>
+                    <h3>jam block explorer<br /><small>(planned)</small></h3>
+                    <p></p>
+                    <a href="#contact" class="scroll-down btn-transparent">contact</a>
                 </div>
-                <div class="item-full">
-                    <div class="top"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M12.0002 10.587L16.9502 5.63696L18.3642 7.05096L13.4142 12.001L18.3642 16.951L16.9492 18.365L11.9992 13.415L7.05023 18.365L5.63623 16.95L10.5862 12L5.63623 7.04996L7.05023 5.63796L12.0002 10.587Z" fill="#114688"/>
-                        </svg>
-                        </div>
-                    <div class="img"><img src="assets/images/icon7.png" alt=""></div>
+                <div class="item">
+                    <div class="img"><img src="assets/images/icon3.png" alt=""></div>
+                    <h3>jam network dashboard<br /><small>(planned)</small></h3>
+                    <p></p>
+                    <a href="#contact" class="scroll-down btn-transparent">contact</a>
+                </div>
+                <div class="item-full mobile-hidden">
+                    <div class="img"></div>
                     <div class="text">
-                    <h3>JAM Implementation</h3>
-                    <p>Enhancing the JAM ecosystem, focusing on better performance and interoperability. Our JAM protocol implementations ensure improvements for scalability and efficiency.</p>
-                    <a href="#" class="btn-transparent">GitHub Link</a>
-                </div>
+                        <h3>typeberry (stealth mode)</h3>
+                        <p>our flagship project is the jam protocol implementation called typeberry. it is written in typescript, so it might not be the fastest but we strive to make it the most useful for jam-based tool developers and the most helpful for other jam implementors.</p>
+                        <p>the project is currently closed-source due to the <a href="//jam.web3.foundation">decentralized jam contest</a> but reach out if you want to learn more.</p>
+                        <a href="#contact" class="scroll-down btn">contact</a>
+                    </div>
                 </div>
             </div>
-            <div class="list-load-more btn-transparent">Load More</div>
+            <div class="list-load-more btn-transparent">moar?</div>
         </div>
     </div>
 
+<!--
     <div class="what-we-do" id="what-we-do">
         <div class="container">
             <div class="heading">
@@ -142,9 +329,6 @@
                 <div class="left"><img src="assets/images/computer.svg" alt="" ></div>
                 <div class="right">
                     <div class="item">
-                        <div class="close"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12.0002 10.587L16.9502 5.63696L18.3642 7.05096L13.4142 12.001L18.3642 16.951L16.9492 18.365L11.9992 13.415L7.05023 18.365L5.63623 16.95L10.5862 12L5.63623 7.04996L7.05023 5.63796L12.0002 10.587Z" fill="#114688"></path>
-                            </svg></div>
                         <h3>Blockchain Development:</h3>
                         <p>Building smart contracts and dApps with a fun twist.</p>
                     </div>
@@ -168,6 +352,12 @@
             </div>
         </div>
     </div>
+-->
+<!--
+    if you reached to this part of the code, let's get in touch.
+    we're curious to know you and, who knows, we might end up working together :)
+    the stuff below is some ai-generated bullshit that people usually put on their
+    websites. we'd rather show you source code of our tooling instead.
 
     <div class="technologies" id="technologies">
         <div class="container">
@@ -207,18 +397,19 @@
             </div>
         </div>
     </div>
+-->
 
     <div class="contact" id="contact">
         <div class="container">
             <div class="left"><img src="assets/images/footer-pads.svg" alt=""></div>
             <div class="right">
-                <h3>Let's Play Together</h3>
-                <p>We’d love to hear from you! Whether you have a project in mind, want to collaborate, or just want to say hi, drop us a message.</p>
+                <h3>get in touch</h3>
+                <p>if for some weird reason you are interested in speaking with us feel free to send us an e-mail. but honestly we would rather have you create a github issue or a pull request instead.</p>
                 <form>
-                    <div class="form-wrap"><input type="text" placeholder="Name"></div>
-                    <div class="form-wrap"><input type="text" placeholder="Email"></div>
-                    <div class="form-wrap"><textarea placeholder="Message"></textarea></div>
-                     <button class="btn">Submit</button>
+                    <div class="form-wrap"><input type="text" placeholder="name"></div>
+                    <div class="form-wrap"><input type="text" placeholder="email"></div>
+                    <div class="form-wrap"><textarea placeholder="describe why you bother us"></textarea></div>
+                     <button class="btn">send</button>
                 </form>
             </div>
         </div>
@@ -229,18 +420,15 @@
             <div class="header__inner">
                 <div class="logo"><img src="assets/images/logo.svg" alt=""></div>
                 <ul>
-                    <li><a href="#project" class="scroll-down">Project</a></li>
-                    <li><a href="#what-we-do" class="scroll-down">What we do</a></li>
-                    <li><a href="#technologies" class="scroll-down">Competencies & Technologies</a></li>
-                    <li><a href="#contact" class="scroll-down">Contact</a></li>
+                    <li><a href="#project" class="scroll-down">projects</a></li>
+                    <li><a href="//github.com/FluffyLabs" class="scroll-down">github</a></li>
+                    <li><a>&copy; 2024 fluffy labs</a></li>
                 </ul>
-                <div class="bottom-text">© 2024 Fluffy Labs | Made with ❤️ and 🧙‍♂️ in Blockchainland</div>
             </div>
         </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="assets/dist/app.js"></script>
-
 </body>
 
 </html>
