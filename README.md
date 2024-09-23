@@ -3,7 +3,7 @@
 ### How do I get set up? ###
 
 Install NPM (tested with node v15.9.0)
-1. npm i
+1. npm ci
 2. npm run dev
 
 ### How it's done ###

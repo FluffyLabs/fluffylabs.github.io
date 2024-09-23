@@ -9,7 +9,7 @@
     @include breakpoint(tablet) {
         margin-top: 16px;
         background-size: 360px auto;
-        background-image: url('./images/people-mobile.png');
+        background-image: url('../images/people-mobile.png');
         padding-bottom: 85px;
     }
     .label {
@@ -306,7 +306,7 @@
             }
             .img {
                 background-color: #abd36b;
-                background-image: url('./assets/images/icon8.png');
+                background-image: url('../images/icon8.png');
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: contain;
@@ -607,14 +607,11 @@
 
 @media (prefers-color-scheme: dark) {
     body {
-        background-image: url('./images/bottom-bg.png'), url('./images/top-bg-dark.jpg');
-        background-position: center -450px, center bottom;
+        background-image: url('../images/bottom-bg.png'), url('../images/top-bg-dark.jpg');
+        background-position: center bottom, center top;
         background-repeat: no-repeat, no-repeat;
         background-color: #134D95;
         color: #FFF;
-        @media all and (max-width: 767px) {
-            background-position: calc(50% - 350px) -450px, center bottom;
-        }
     }
     .header__inner ul li a {
         color: #FFF;
