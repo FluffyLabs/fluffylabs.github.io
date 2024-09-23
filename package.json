@@ -18,7 +18,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^3.0.2",
+    "browser-sync": "^2.26.2",
     "browser-sync-webpack-plugin": "^2.3.0",
     "laravel-mix": "^6.0.39",
     "resolve-url-loader": "^5.0.0",
