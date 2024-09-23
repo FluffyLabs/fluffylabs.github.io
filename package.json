@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "npm run dev",
     "development": "mix",
     "dev": "mix watch",
     "watch": "mix watch",
