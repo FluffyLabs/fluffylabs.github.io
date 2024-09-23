@@ -1,0 +1,35 @@
+{
+  "name": "webpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "development": "mix",
+    "dev": "mix watch",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "production": "mix --production",
+    "prod": "mix --production",
+    "build": "mix --production"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.7",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "laravel-mix": "^6.0.39",
+    "resolve-url-loader": "^4.0.0",
+    "sass": "^1.44.0",
+    "sass-loader": "^12.4.0"
+  },
+  "dependencies": {
+    "@fancyapps/ui": "^4.0.12",
+    "aos": "^2.3.4",
+    "counterup2": "^2.0.2",
+    "jquery-parallax.js": "^1.5.0",
+    "slick-carousel": "^1.8.1",
+    "waypoints": "^4.0.1"
+  }
+}

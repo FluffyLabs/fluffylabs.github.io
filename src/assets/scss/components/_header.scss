@@ -1,5 +1,12 @@
 .header {
     margin: 15px 0 0 0;
+    @include breakpoint(tablet) {
+        margin-bottom: 100px;
+        &:not(.footer) .logo,
+        .menu-toggle span {
+            filter: drop-shadow(-1px 0 3px #666);
+        }
+    }
     &__inner {
         border: 2px solid #FFF;
         background: rgba(255,255,255,0.24);
@@ -10,6 +17,7 @@
         position: relative;
         @include breakpoint(tablet) {
             height: 75px;
+            background: rgba(255, 255, 255, 0.44);
         }
         .logo {
             margin-left: 10px;
@@ -43,8 +51,8 @@
             li {
                 a {
                     border-left: 2px solid #FFF;
-                    color: #211E59;
-                    font-size: 16px;
+                    color: #FFF;
+                    font-size: 20px;
                     font-weight: 600;
                     text-decoration: none;
                     padding: 24px 20px;
@@ -83,7 +91,7 @@
             position: absolute;
             width: 26px;
             height: 3px;
-            background: #211E59;
+            background: #FFF;
             left: 3px;
             &:nth-child(1) {
                 top: 3px;
@@ -117,17 +125,24 @@
 }
 
 .footer {
-    margin: 224px 0 30px 0;
+    margin: 130px 0 30px 0;
     @include breakpoint(tablet) {
-        margin: 89px 0 30px 0;
+        margin: 80px 0 30px 0;
         .logo {
             margin: 10px 15px;
+            flex: 1;
+            img {
+                margin: auto;
+            }
         }
         .container {
             padding: 0;
         }
         .header__inner {
             height: auto;
+            ul li a {
+                color: #FFF !important;
+            }
         }
         ul {
             opacity: 1 !important;
@@ -138,6 +153,7 @@
             border: none !important;
             border-top: 2px solid #FFF !important;
             background: none !important;
+            justify-content: space-evenly;
             li {
                 a {
                     border-right: 2px solid #FFF !important;

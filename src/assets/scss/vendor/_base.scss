@@ -1,0 +1,73 @@
+@import "@fancyapps/ui/dist/fancybox.css";
+
+@font-face {
+    font-family: "Heading Font";
+    src: url('../fonts/MatchupPro.eot');
+    src: url('../fonts/MatchupPro.eot') format('embedded-opentype'),
+         url('../fonts/MatchupPro.woff') format('woff2'),
+         url('../fonts/MatchupPro.woff') format('woff'),
+         url('../fonts/MatchupPro.ttf') format('truetype');
+  }
+
+body {
+    font-family: "Inria Sans", sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    background-size: contain, contain;
+    background-image: url('../images/bottom-bg-dark.png'), url('../images/top-bg.jpg');
+    background-position: center bottom, center top;
+    background-repeat: no-repeat;
+    color: #211E59;
+    @include breakpoint(tablet) {
+        background-size: auto, contain;
+    }
+    &.hidden-ov {
+        overflow: hidden;
+    }
+}
+*{
+    box-sizing: border-box;
+    outline: none;
+}
+a {
+    transition: $transition;
+    color: #9A6259;
+    &:hover {
+        text-decoration: underline !important;
+    }
+}
+h1,h2,h3,h4,h5 {
+    font-weight: normal;
+}
+
+strong {
+    font-weight: 700;
+}
+
+.container {
+    max-width: 1180px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.btn {
+    background: #FFF;
+    font-family: "Heading Font";
+    color: #211E59;
+    text-decoration: none;
+    padding: 19px 45px;
+    font-size: 32px;
+    display: inline-block;
+    cursor: pointer;
+}
+.btn-transparent {
+    border: 1px solid #211E59;
+    color: #211E59;
+    font-family: "Heading Font";
+    font-size: 32px;
+    padding: 19px 38px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}

@@ -1,0 +1,66 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@mixin breakpoint($point) {
+    @if $point == monitor {
+        @media (max-width: 1500px) { @content ; }
+    }
+    @if $point == laptop {
+        @media (max-width: 1200px) { @content ; }
+    }
+    @else if $point == tablet {
+        @media (max-width: 1023px) { @content ; }
+    }
+    @else if $point == tabletup {
+        @media (min-width: 1024px) { @content ; }
+    }
+    @else if $point == mobile {
+        @media (max-width: 767px)  { @content ; }
+    }
+    @else if $point == mobileonly {
+        @media (max-width: 600px)  { @content ; }
+    }
+    @else if $point == ie11 {
+        @media all and (-ms-high-contrast:none) { @content ; }
+    }
+}
+
+//Colors
+$blue: #1b49a3;
+
+// Fonts
+$primary-font: "Inria Sans", sans-serif;
+
+
+//Transitions
+$transition: all 0.5s;
+
+
+@mixin link-underline {
+    position: relative;
+    color: inherit;
+  
+    &::after {
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 1px;
+      bottom: 0;
+      background-color: currentColor;
+      content: ' ';
+      transition: transform 1.2s cubic-bezier(0.19, 1, 0.22, 1);
+      transform-origin: left center;
+      height: 1px;
+    }
+  
+    &:hover,
+    a:hover & {
+      color: inherit;
+  
+      &:not(:disabled):not(.disabled) {
+        &::after {
+          transform-origin: right center;
+          transform: scaleX(0);
+        }
+      }
+    }
+  }
