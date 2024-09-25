@@ -254,7 +254,7 @@
             }
             @include breakpoint(tablet) {
                 display: block;
-                margin: 0;
+                margin-top: 0;
             }
             .text {
                 width: calc(100% - 440px);
