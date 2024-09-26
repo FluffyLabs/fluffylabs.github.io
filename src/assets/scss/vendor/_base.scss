@@ -17,6 +17,7 @@ body {
     background-image: url('../images/bottom-bg-dark.png'), url('../images/top-bg.jpg');
     background-position: center bottom, center top;
     background-repeat: no-repeat;
+    background-color: #e7f1fa;
     color: #211E59;
     @include breakpoint(tablet) {
         background-size: auto, contain;
