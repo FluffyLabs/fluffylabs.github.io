@@ -18,15 +18,15 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.26.2",
-    "browser-sync-webpack-plugin": "^2.3.0",
+    "browser-sync": "^3.0.4",
+    "browser-sync-webpack-plugin": "^2.4.0",
     "laravel-mix": "^6.0.39",
     "resolve-url-loader": "^5.0.0",
-    "sass": "^1.44.0",
-    "sass-loader": "^12.4.0"
+    "sass": "^1.93.2",
+    "sass-loader": "^16.0.5"
   },
   "dependencies": {
-    "@fancyapps/ui": "^4.0.12",
+    "@fancyapps/ui": "^6.0.32",
     "aos": "^2.3.4",
     "counterup2": "^2.0.2",
     "jquery-parallax.js": "^1.5.0",
