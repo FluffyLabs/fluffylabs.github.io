@@ -143,6 +143,13 @@ a {
     box-shadow: 1px 1px 0 #fff;
 }
 
+.dark .hero-panel,
+.dark .projects-panel,
+.dark .contact-panel,
+.dark .page-footer {
+    box-shadow: 1px 1px 0 rgba(255, 255, 255, 0.06);
+}
+
 .hero-panel {
     padding: 2rem 1.4rem;
     text-align: center;

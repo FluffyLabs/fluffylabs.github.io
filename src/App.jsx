@@ -41,7 +41,7 @@ function App() {
 
                             <article className="project featured-project">
                                 <div className="project-icon-wrap">
-                                    <img src="/assets/images/icon8.png" alt="typeberry icon" />
+                                    <img src="/assets/images/logo-typeberry.svg" alt="typeberry icon" />
                                 </div>
                                 <div className="project-copy">
                                     <h3>typeberry</h3>
@@ -57,7 +57,7 @@ function App() {
                             <div className={`project-grid ${showAllProjects ? 'expanded' : ''}`}>
                                 <article className="project">
                                     <div className="project-icon-wrap small">
-                                        <img src="/assets/images/icon4.png" alt="pvm debugger icon" />
+                                        <img src="/assets/images/logo-pvm-debugger.svg" alt="pvm debugger icon" />
                                     </div>
                                     <h3>pvm debugger</h3>
                                     <p>pvm is a new virtual machine based on risc-v and designed specifically for jam. we have built a web-based tool to disassemble pvm programs and after plugging in one of available pvm implementations also running &amp; debugging it.</p>
@@ -67,7 +67,7 @@ function App() {
 
                                 <article className="project">
                                     <div className="project-icon-wrap small">
-                                        <img src="/assets/images/icon1.png" alt="gray paper reader icon" />
+                                        <img src="/assets/images/logo-graypaper-reader.svg" alt="gray paper reader icon" />
                                     </div>
                                     <h3>gray paper reader</h3>
                                     <p>to accelerate jam implementation, we have built a web-based reader for the <a href="//graypaper.com" target="_blank" rel="noreferrer">gray paper</a>. it allows sharing links to a selection and manage personal notes. there is also an ai assistant to help explaining the concise form of the paper.</p>
@@ -77,7 +77,7 @@ function App() {
 
                                 <article className="project">
                                     <div className="project-icon-wrap small">
-                                        <img src="/assets/images/icon6.png" alt="jam search icon" />
+                                        <img src="/assets/images/logo-jam-search.svg" alt="jam search icon" />
                                     </div>
                                     <h3>jam search</h3>
                                     <p>search for jam-related content on the web &amp; matrix chat rooms</p>
@@ -87,7 +87,7 @@ function App() {
 
                                 <article className="project project-extra">
                                     <div className="project-icon-wrap small">
-                                        <img src="/assets/images/icon5.png" alt="jam codec icon" />
+                                        <img src="/assets/images/logo-codec.svg" alt="jam codec icon" />
                                     </div>
                                     <h3>jam codec</h3>
                                     <p>encode &amp; decode basic jam data structure&apos;s</p>
@@ -97,7 +97,7 @@ function App() {
 
                                 <article className="project project-extra">
                                     <div className="project-icon-wrap small">
-                                        <img src="/assets/images/icon2.png" alt="state viewer icon" />
+                                        <img src="/assets/images/logo-state-viewer.svg" alt="state viewer icon" />
                                     </div>
                                     <h3>state viewer</h3>
                                     <p>A web application for inspecting JAM state data. Upload serialized state dumps in JSON format to view and analyze their contents. Includes trie visualization for educational purposes.</p>
@@ -107,7 +107,7 @@ function App() {
 
                                 <article className="project project-extra">
                                     <div className="project-icon-wrap small">
-                                        <img src="/assets/images/icon3.png" alt="jam network dashboard icon" />
+                                        <img src="/assets/images/logo-jam-testing.svg" alt="jam-testing icon" />
                                     </div>
                                     <h3>jam-testing</h3>
                                     <p>tools and test resources for validating JAM implementations.</p>
